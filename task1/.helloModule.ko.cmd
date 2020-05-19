@@ -1,0 +1,1 @@
+cmd_/home/vagrant/eudyptula/task1/helloModule.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 --build-id  -T ./scripts/module-common.lds -o /home/vagrant/eudyptula/task1/helloModule.ko /home/vagrant/eudyptula/task1/helloModule.o /home/vagrant/eudyptula/task1/helloModule.mod.o;  true

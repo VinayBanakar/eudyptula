@@ -1,0 +1,708 @@
+-- Logs begin at Wed 2020-05-06 09:33:46 UTC, end at Tue 2020-05-19 11:22:42 UTC. --
+May 19 10:55:36 archlinux kernel: Linux version 5.7.0-rc6linux-5.7-dirty (root@archlinux) (gcc version 9.3.0 (Arch Linux 9.3.0-1), GNU ld (GNU Binutils) 2.34) #3 SMP PREEMPT Tue May 19 08:07:35 UTC 2020
+May 19 10:55:36 archlinux kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-linux57 root=UUID=c5d7bb01-68c4-42b2-8691-f5bad449b4e4 rw net.ifnames=0 loglevel=3 quiet
+May 19 10:55:36 archlinux kernel: KERNEL supported cpus:
+May 19 10:55:36 archlinux kernel:   Intel GenuineIntel
+May 19 10:55:36 archlinux kernel:   AMD AuthenticAMD
+May 19 10:55:36 archlinux kernel:   Hygon HygonGenuine
+May 19 10:55:36 archlinux kernel:   Centaur CentaurHauls
+May 19 10:55:36 archlinux kernel:   zhaoxin   Shanghai  
+May 19 10:55:36 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+May 19 10:55:36 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+May 19 10:55:36 archlinux kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+May 19 10:55:36 archlinux kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+May 19 10:55:36 archlinux kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+May 19 10:55:36 archlinux kernel: BIOS-provided physical RAM map:
+May 19 10:55:36 archlinux kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+May 19 10:55:36 archlinux kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+May 19 10:55:36 archlinux kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+May 19 10:55:36 archlinux kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+May 19 10:55:36 archlinux kernel: BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+May 19 10:55:36 archlinux kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+May 19 10:55:36 archlinux kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+May 19 10:55:36 archlinux kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+May 19 10:55:36 archlinux kernel: BIOS-e820: [mem 0x0000000100000000-0x000000011fffffff] usable
+May 19 10:55:36 archlinux kernel: NX (Execute Disable) protection: active
+May 19 10:55:36 archlinux kernel: SMBIOS 2.5 present.
+May 19 10:55:36 archlinux kernel: DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+May 19 10:55:36 archlinux kernel: Hypervisor detected: KVM
+May 19 10:55:36 archlinux kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+May 19 10:55:36 archlinux kernel: kvm-clock: cpu 0, msr cce01001, primary cpu clock
+May 19 10:55:36 archlinux kernel: kvm-clock: using sched offset of 4925409606 cycles
+May 19 10:55:36 archlinux kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+May 19 10:55:36 archlinux kernel: tsc: Detected 2303.998 MHz processor
+May 19 10:55:36 archlinux kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+May 19 10:55:36 archlinux kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+May 19 10:55:36 archlinux kernel: last_pfn = 0x120000 max_arch_pfn = 0x400000000
+May 19 10:55:36 archlinux kernel: MTRR default type: uncachable
+May 19 10:55:36 archlinux kernel: MTRR variable ranges disabled:
+May 19 10:55:36 archlinux kernel: Disabled
+May 19 10:55:36 archlinux kernel: x86/PAT: MTRRs disabled, skipping PAT initialization too.
+May 19 10:55:36 archlinux kernel: CPU MTRRs all blank - virtualized system.
+May 19 10:55:36 archlinux kernel: x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+May 19 10:55:36 archlinux kernel: last_pfn = 0xdfff0 max_arch_pfn = 0x400000000
+May 19 10:55:36 archlinux kernel: found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+May 19 10:55:36 archlinux kernel: check: Scanning 1 areas for low memory corruption
+May 19 10:55:36 archlinux kernel: BRK [0xcd001000, 0xcd001fff] PGTABLE
+May 19 10:55:36 archlinux kernel: BRK [0xcd002000, 0xcd002fff] PGTABLE
+May 19 10:55:36 archlinux kernel: BRK [0xcd003000, 0xcd003fff] PGTABLE
+May 19 10:55:36 archlinux kernel: BRK [0xcd004000, 0xcd004fff] PGTABLE
+May 19 10:55:36 archlinux kernel: BRK [0xcd005000, 0xcd005fff] PGTABLE
+May 19 10:55:36 archlinux kernel: RAMDISK: [mem 0x3577b000-0x36bb4fff]
+May 19 10:55:36 archlinux kernel: ACPI: Early table checksum verification disabled
+May 19 10:55:36 archlinux kernel: ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+May 19 10:55:36 archlinux kernel: ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+May 19 10:55:36 archlinux kernel: ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+May 19 10:55:36 archlinux kernel: ACPI: DSDT 0x00000000DFFF0470 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+May 19 10:55:36 archlinux kernel: ACPI: FACS 0x00000000DFFF0200 000040
+May 19 10:55:36 archlinux kernel: ACPI: FACS 0x00000000DFFF0200 000040
+May 19 10:55:36 archlinux kernel: ACPI: APIC 0x00000000DFFF0240 00005C (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+May 19 10:55:36 archlinux kernel: ACPI: SSDT 0x00000000DFFF02A0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+May 19 10:55:36 archlinux kernel: ACPI: Local APIC address 0xfee00000
+May 19 10:55:36 archlinux kernel: No NUMA configuration found
+May 19 10:55:36 archlinux kernel: Faking a node at [mem 0x0000000000000000-0x000000011fffffff]
+May 19 10:55:36 archlinux kernel: NODE_DATA(0) allocated [mem 0x11fff8000-0x11fffbfff]
+May 19 10:55:36 archlinux kernel: Zone ranges:
+May 19 10:55:36 archlinux kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+May 19 10:55:36 archlinux kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+May 19 10:55:36 archlinux kernel:   Normal   [mem 0x0000000100000000-0x000000011fffffff]
+May 19 10:55:36 archlinux kernel:   Device   empty
+May 19 10:55:36 archlinux kernel: Movable zone start for each node
+May 19 10:55:36 archlinux kernel: Early memory node ranges
+May 19 10:55:36 archlinux kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+May 19 10:55:36 archlinux kernel:   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+May 19 10:55:36 archlinux kernel:   node   0: [mem 0x0000000100000000-0x000000011fffffff]
+May 19 10:55:36 archlinux kernel: Zeroed struct page in unavailable ranges: 114 pages
+May 19 10:55:36 archlinux kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000011fffffff]
+May 19 10:55:36 archlinux kernel: On node 0 totalpages: 1048462
+May 19 10:55:36 archlinux kernel:   DMA zone: 64 pages used for memmap
+May 19 10:55:36 archlinux kernel:   DMA zone: 21 pages reserved
+May 19 10:55:36 archlinux kernel:   DMA zone: 3998 pages, LIFO batch:0
+May 19 10:55:36 archlinux kernel:   DMA32 zone: 14272 pages used for memmap
+May 19 10:55:36 archlinux kernel:   DMA32 zone: 913392 pages, LIFO batch:63
+May 19 10:55:36 archlinux kernel:   Normal zone: 2048 pages used for memmap
+May 19 10:55:36 archlinux kernel:   Normal zone: 131072 pages, LIFO batch:31
+May 19 10:55:36 archlinux kernel: ACPI: PM-Timer IO Port: 0x4008
+May 19 10:55:36 archlinux kernel: ACPI: Local APIC address 0xfee00000
+May 19 10:55:36 archlinux kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+May 19 10:55:36 archlinux kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+May 19 10:55:36 archlinux kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+May 19 10:55:36 archlinux kernel: ACPI: IRQ0 used by override.
+May 19 10:55:36 archlinux kernel: ACPI: IRQ9 used by override.
+May 19 10:55:36 archlinux kernel: Using ACPI (MADT) for SMP configuration information
+May 19 10:55:36 archlinux kernel: smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000effff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+May 19 10:55:36 archlinux kernel: PM: hibernation: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+May 19 10:55:36 archlinux kernel: [mem 0xe0000000-0xfebfffff] available for PCI devices
+May 19 10:55:36 archlinux kernel: Booting paravirtualized kernel on KVM
+May 19 10:55:36 archlinux kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370452778343963 ns
+May 19 10:55:36 archlinux kernel: setup_percpu: NR_CPUS:320 nr_cpumask_bits:320 nr_cpu_ids:2 nr_node_ids:1
+May 19 10:55:36 archlinux kernel: percpu: Embedded 57 pages/cpu s196608 r8192 d28672 u1048576
+May 19 10:55:36 archlinux kernel: pcpu-alloc: s196608 r8192 d28672 u1048576 alloc=1*2097152
+May 19 10:55:36 archlinux kernel: pcpu-alloc: [0] 0 1 
+May 19 10:55:36 archlinux kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+May 19 10:55:36 archlinux kernel: Built 1 zonelists, mobility grouping on.  Total pages: 1032057
+May 19 10:55:36 archlinux kernel: Policy zone: Normal
+May 19 10:55:36 archlinux kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux57 root=UUID=c5d7bb01-68c4-42b2-8691-f5bad449b4e4 rw net.ifnames=0 loglevel=3 quiet
+May 19 10:55:36 archlinux kernel: Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+May 19 10:55:36 archlinux kernel: Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+May 19 10:55:36 archlinux kernel: mem auto-init: stack:byref_all, heap alloc:on, heap free:off
+May 19 10:55:36 archlinux kernel: Memory: 4004140K/4193848K available (12291K kernel code, 1464K rwdata, 4788K rodata, 1640K init, 3156K bss, 189708K reserved, 0K cma-reserved)
+May 19 10:55:36 archlinux kernel: random: get_random_u64 called from __kmem_cache_create+0x3e/0x520 with crng_init=0
+May 19 10:55:36 archlinux kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+May 19 10:55:36 archlinux kernel: Kernel/User page tables isolation: enabled
+May 19 10:55:36 archlinux kernel: ftrace: allocating 40660 entries in 159 pages
+May 19 10:55:36 archlinux kernel: ftrace: allocated 159 pages with 6 groups
+May 19 10:55:36 archlinux kernel: rcu: Preemptible hierarchical RCU implementation.
+May 19 10:55:36 archlinux kernel: rcu:         RCU dyntick-idle grace-period acceleration is enabled.
+May 19 10:55:36 archlinux kernel: rcu:         RCU restricting CPUs from NR_CPUS=320 to nr_cpu_ids=2.
+May 19 10:55:36 archlinux kernel: rcu:         RCU priority boosting: priority 1 delay 500 ms.
+May 19 10:55:36 archlinux kernel:         Tasks RCU enabled.
+May 19 10:55:36 archlinux kernel: rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+May 19 10:55:36 archlinux kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+May 19 10:55:36 archlinux kernel: NR_IRQS: 20736, nr_irqs: 440, preallocated irqs: 16
+May 19 10:55:36 archlinux kernel: Console: colour dummy device 80x25
+May 19 10:55:36 archlinux kernel: printk: console [tty0] enabled
+May 19 10:55:36 archlinux kernel: ACPI: Core revision 20200326
+May 19 10:55:36 archlinux kernel: APIC: Switch to symmetric I/O mode setup
+May 19 10:55:36 archlinux kernel: x2apic enabled
+May 19 10:55:36 archlinux kernel: Switched APIC routing to physical x2apic.
+May 19 10:55:36 archlinux kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+May 19 10:55:36 archlinux kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2135f5e6f15, max_idle_ns: 440795231538 ns
+May 19 10:55:36 archlinux kernel: Calibrating delay loop (skipped) preset value.. 4609.99 BogoMIPS (lpj=7679993)
+May 19 10:55:36 archlinux kernel: pid_max: default: 32768 minimum: 301
+May 19 10:55:36 archlinux kernel: LSM: Security Framework initializing
+May 19 10:55:36 archlinux kernel: Yama: becoming mindful.
+May 19 10:55:36 archlinux kernel: Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+May 19 10:55:36 archlinux kernel: Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+May 19 10:55:36 archlinux kernel: unchecked MSR access error: WRMSR to 0x3a (tried to write 0x0000000000000001) at rIP: 0xffffffffa98729e4 (native_write_msr+0x4/0x20)
+May 19 10:55:36 archlinux kernel: Call Trace:
+May 19 10:55:36 archlinux kernel:  init_ia32_feat_ctl+0x7a/0x267
+May 19 10:55:36 archlinux kernel:  init_intel+0xdd/0x410
+May 19 10:55:36 archlinux kernel:  identify_cpu+0x2d0/0x5c0
+May 19 10:55:36 archlinux kernel:  identify_boot_cpu+0xc/0x94
+May 19 10:55:36 archlinux kernel:  check_bugs+0x28/0x949
+May 19 10:55:36 archlinux kernel:  ? _raw_spin_lock+0x13/0x30
+May 19 10:55:36 archlinux kernel:  ? __get_locked_pte+0xc9/0x110
+May 19 10:55:36 archlinux kernel:  start_kernel+0x850/0x889
+May 19 10:55:36 archlinux kernel:  secondary_startup_64+0xb6/0xc0
+May 19 10:55:36 archlinux kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+May 19 10:55:36 archlinux kernel: Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+May 19 10:55:36 archlinux kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+May 19 10:55:36 archlinux kernel: Spectre V2 : Mitigation: Full generic retpoline
+May 19 10:55:36 archlinux kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+May 19 10:55:36 archlinux kernel: Speculative Store Bypass: Vulnerable
+May 19 10:55:36 archlinux kernel: MDS: Mitigation: Clear CPU buffers
+May 19 10:55:36 archlinux kernel: Freeing SMP alternatives memory: 32K
+May 19 10:55:36 archlinux kernel: smpboot: CPU0: Intel(R) Core(TM) i5-7360U CPU @ 2.30GHz (family: 0x6, model: 0x8e, stepping: 0x9)
+May 19 10:55:36 archlinux kernel: Performance Events: unsupported p6 CPU model 142 no PMU driver, software events only.
+May 19 10:55:36 archlinux kernel: rcu: Hierarchical SRCU implementation.
+May 19 10:55:36 archlinux kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+May 19 10:55:36 archlinux kernel: smp: Bringing up secondary CPUs ...
+May 19 10:55:36 archlinux kernel: x86: Booting SMP configuration:
+May 19 10:55:36 archlinux kernel: .... node  #0, CPUs:      #1
+May 19 10:55:36 archlinux kernel: kvm-clock: cpu 1, msr cce01041, secondary cpu clock
+May 19 10:55:36 archlinux kernel: smp: Brought up 1 node, 2 CPUs
+May 19 10:55:36 archlinux kernel: smpboot: Max logical packages: 1
+May 19 10:55:36 archlinux kernel: smpboot: Total of 2 processors activated (9219.99 BogoMIPS)
+May 19 10:55:36 archlinux kernel: devtmpfs: initialized
+May 19 10:55:36 archlinux kernel: x86/mm: Memory block size: 128MB
+May 19 10:55:36 archlinux kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+May 19 10:55:36 archlinux kernel: futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+May 19 10:55:36 archlinux kernel: pinctrl core: initialized pinctrl subsystem
+May 19 10:55:36 archlinux kernel: PM: RTC time: 10:55:33, date: 2020-05-19
+May 19 10:55:36 archlinux kernel: thermal_sys: Registered thermal governor 'fair_share'
+May 19 10:55:36 archlinux kernel: thermal_sys: Registered thermal governor 'bang_bang'
+May 19 10:55:36 archlinux kernel: thermal_sys: Registered thermal governor 'step_wise'
+May 19 10:55:36 archlinux kernel: thermal_sys: Registered thermal governor 'user_space'
+May 19 10:55:36 archlinux kernel: thermal_sys: Registered thermal governor 'power_allocator'
+May 19 10:55:36 archlinux kernel: NET: Registered protocol family 16
+May 19 10:55:36 archlinux kernel: audit: initializing netlink subsys (disabled)
+May 19 10:55:36 archlinux kernel: audit: type=2000 audit(1589885740.000:1): state=initialized audit_enabled=0 res=1
+May 19 10:55:36 archlinux kernel: cpuidle: using governor ladder
+May 19 10:55:36 archlinux kernel: cpuidle: using governor menu
+May 19 10:55:36 archlinux kernel: ACPI: bus type PCI registered
+May 19 10:55:36 archlinux kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+May 19 10:55:36 archlinux kernel: PCI: Using configuration type 1 for base access
+May 19 10:55:36 archlinux kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+May 19 10:55:36 archlinux kernel: ACPI: Added _OSI(Module Device)
+May 19 10:55:36 archlinux kernel: ACPI: Added _OSI(Processor Device)
+May 19 10:55:36 archlinux kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+May 19 10:55:36 archlinux kernel: ACPI: Added _OSI(Processor Aggregator Device)
+May 19 10:55:36 archlinux kernel: ACPI: Added _OSI(Linux-Dell-Video)
+May 19 10:55:36 archlinux kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+May 19 10:55:36 archlinux kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+May 19 10:55:36 archlinux kernel: ACPI: 2 ACPI AML tables successfully acquired and loaded
+May 19 10:55:36 archlinux kernel: ACPI: Interpreter enabled
+May 19 10:55:36 archlinux kernel: ACPI: (supports S0 S5)
+May 19 10:55:36 archlinux kernel: ACPI: Using IOAPIC for interrupt routing
+May 19 10:55:36 archlinux kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+May 19 10:55:36 archlinux kernel: ACPI: Enabled 2 GPEs in block 00 to 07
+May 19 10:55:36 archlinux kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+May 19 10:55:36 archlinux kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+May 19 10:55:36 archlinux kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+May 19 10:55:36 archlinux kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+May 19 10:55:36 archlinux kernel: PCI host bridge to bus 0000:00
+May 19 10:55:36 archlinux kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+May 19 10:55:36 archlinux kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+May 19 10:55:36 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+May 19 10:55:36 archlinux kernel: pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+May 19 10:55:36 archlinux kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+May 19 10:55:36 archlinux kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+May 19 10:55:36 archlinux kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+May 19 10:55:36 archlinux kernel: pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+May 19 10:55:36 archlinux kernel: pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+May 19 10:55:36 archlinux kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+May 19 10:55:36 archlinux kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+May 19 10:55:36 archlinux kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+May 19 10:55:36 archlinux kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+May 19 10:55:36 archlinux kernel: pci 0000:00:02.0: [80ee:beef] type 00 class 0x030000
+May 19 10:55:36 archlinux kernel: pci 0000:00:02.0: reg 0x10: [mem 0xe0000000-0xe07fffff pref]
+May 19 10:55:36 archlinux kernel: pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+May 19 10:55:36 archlinux kernel: pci 0000:00:03.0: reg 0x10: [mem 0xf0000000-0xf001ffff]
+May 19 10:55:36 archlinux kernel: pci 0000:00:03.0: reg 0x18: [io  0xd010-0xd017]
+May 19 10:55:36 archlinux kernel: pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+May 19 10:55:36 archlinux kernel: pci 0000:00:04.0: reg 0x10: [io  0xd020-0xd03f]
+May 19 10:55:36 archlinux kernel: pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+May 19 10:55:36 archlinux kernel: pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+May 19 10:55:36 archlinux kernel: pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+May 19 10:55:36 archlinux kernel: pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+May 19 10:55:36 archlinux kernel: pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+May 19 10:55:36 archlinux kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+May 19 10:55:36 archlinux kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+May 19 10:55:36 archlinux kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+May 19 10:55:36 archlinux kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+May 19 10:55:36 archlinux kernel: iommu: Default domain type: Translated 
+May 19 10:55:36 archlinux kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+May 19 10:55:36 archlinux kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+May 19 10:55:36 archlinux kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+May 19 10:55:36 archlinux kernel: vgaarb: loaded
+May 19 10:55:36 archlinux kernel: SCSI subsystem initialized
+May 19 10:55:36 archlinux kernel: libata version 3.00 loaded.
+May 19 10:55:36 archlinux kernel: ACPI: bus type USB registered
+May 19 10:55:36 archlinux kernel: usbcore: registered new interface driver usbfs
+May 19 10:55:36 archlinux kernel: usbcore: registered new interface driver hub
+May 19 10:55:36 archlinux kernel: usbcore: registered new device driver usb
+May 19 10:55:36 archlinux kernel: pps_core: LinuxPPS API ver. 1 registered
+May 19 10:55:36 archlinux kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+May 19 10:55:36 archlinux kernel: PTP clock support registered
+May 19 10:55:36 archlinux kernel: EDAC MC: Ver: 3.0.0
+May 19 10:55:36 archlinux kernel: PCI: Using ACPI for IRQ routing
+May 19 10:55:36 archlinux kernel: PCI: pci_cache_line_size set to 64 bytes
+May 19 10:55:36 archlinux kernel: e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+May 19 10:55:36 archlinux kernel: e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+May 19 10:55:36 archlinux kernel: NetLabel: Initializing
+May 19 10:55:36 archlinux kernel: NetLabel:  domain hash size = 128
+May 19 10:55:36 archlinux kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+May 19 10:55:36 archlinux kernel: NetLabel:  unlabeled traffic allowed by default
+May 19 10:55:36 archlinux kernel: clocksource: Switched to clocksource kvm-clock
+May 19 10:55:36 archlinux kernel: VFS: Disk quotas dquot_6.6.0
+May 19 10:55:36 archlinux kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+May 19 10:55:36 archlinux kernel: pnp: PnP ACPI init
+May 19 10:55:36 archlinux kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+May 19 10:55:36 archlinux kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+May 19 10:55:36 archlinux kernel: pnp: PnP ACPI: found 2 devices
+May 19 10:55:36 archlinux kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+May 19 10:55:36 archlinux kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+May 19 10:55:36 archlinux kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+May 19 10:55:36 archlinux kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+May 19 10:55:36 archlinux kernel: pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+May 19 10:55:36 archlinux kernel: NET: Registered protocol family 2
+May 19 10:55:36 archlinux kernel: tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+May 19 10:55:36 archlinux kernel: TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+May 19 10:55:36 archlinux kernel: TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+May 19 10:55:36 archlinux kernel: TCP: Hash tables configured (established 32768 bind 32768)
+May 19 10:55:36 archlinux kernel: UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+May 19 10:55:36 archlinux kernel: UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+May 19 10:55:36 archlinux kernel: NET: Registered protocol family 1
+May 19 10:55:36 archlinux kernel: NET: Registered protocol family 44
+May 19 10:55:36 archlinux kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+May 19 10:55:36 archlinux kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+May 19 10:55:36 archlinux kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+May 19 10:55:36 archlinux kernel: PCI: CLS 0 bytes, default 64
+May 19 10:55:36 archlinux kernel: Trying to unpack rootfs image as initramfs...
+May 19 10:55:36 archlinux kernel: Freeing initrd memory: 20712K
+May 19 10:55:36 archlinux kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+May 19 10:55:36 archlinux kernel: software IO TLB: mapped [mem 0xdbff0000-0xdfff0000] (64MB)
+May 19 10:55:36 archlinux kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2135f5e6f15, max_idle_ns: 440795231538 ns
+May 19 10:55:36 archlinux kernel: clocksource: Switched to clocksource tsc
+May 19 10:55:36 archlinux kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)
+May 19 10:55:36 archlinux kernel: check: Scanning for low memory corruption every 60 seconds
+May 19 10:55:36 archlinux kernel: Initialise system trusted keyrings
+May 19 10:55:36 archlinux kernel: Key type blacklist registered
+May 19 10:55:36 archlinux kernel: workingset: timestamp_bits=41 max_order=20 bucket_order=0
+May 19 10:55:36 archlinux kernel: zbud: loaded
+May 19 10:55:36 archlinux kernel: Key type asymmetric registered
+May 19 10:55:36 archlinux kernel: Asymmetric key parser 'x509' registered
+May 19 10:55:36 archlinux kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+May 19 10:55:36 archlinux kernel: io scheduler mq-deadline registered
+May 19 10:55:36 archlinux kernel: io scheduler kyber registered
+May 19 10:55:36 archlinux kernel: io scheduler bfq registered
+May 19 10:55:36 archlinux kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+May 19 10:55:36 archlinux kernel: vesafb: mode is 640x480x32, linelength=2560, pages=0
+May 19 10:55:36 archlinux kernel: vesafb: scrolling: redraw
+May 19 10:55:36 archlinux kernel: vesafb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+May 19 10:55:36 archlinux kernel: vesafb: framebuffer at 0xe0000000, mapped to 0x0000000058edb09f, using 1216k, total 1216k
+May 19 10:55:36 archlinux kernel: fbcon: Deferring console take-over
+May 19 10:55:36 archlinux kernel: fb0: VESA VGA frame buffer device
+May 19 10:55:36 archlinux kernel: intel_idle: Please enable MWAIT in BIOS SETUP
+May 19 10:55:36 archlinux kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+May 19 10:55:36 archlinux kernel: ACPI: Power Button [PWRF]
+May 19 10:55:36 archlinux kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+May 19 10:55:36 archlinux kernel: ACPI: Sleep Button [SLPF]
+May 19 10:55:36 archlinux kernel: ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+May 19 10:55:36 archlinux kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input2
+May 19 10:55:36 archlinux kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+May 19 10:55:36 archlinux kernel: AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
+May 19 10:55:36 archlinux kernel: AMD-Vi: AMD IOMMUv2 functionality not available on this system
+May 19 10:55:36 archlinux kernel: usbcore: registered new interface driver usbserial_generic
+May 19 10:55:36 archlinux kernel: usbserial: USB Serial support registered for generic
+May 19 10:55:36 archlinux kernel: rtc_cmos rtc_cmos: registered as rtc0
+May 19 10:55:36 archlinux kernel: rtc_cmos rtc_cmos: setting system clock to 2020-05-19T10:55:33 UTC (1589885733)
+May 19 10:55:36 archlinux kernel: rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+May 19 10:55:36 archlinux kernel: intel_pstate: CPU model not supported
+May 19 10:55:36 archlinux kernel: ledtrig-cpu: registered to indicate activity on CPUs
+May 19 10:55:36 archlinux kernel: intel_pmc_core intel_pmc_core.0:  initialized
+May 19 10:55:36 archlinux kernel: drop_monitor: Initializing network drop monitor service
+May 19 10:55:36 archlinux kernel: NET: Registered protocol family 10
+May 19 10:55:36 archlinux kernel: Segment Routing with IPv6
+May 19 10:55:36 archlinux kernel: NET: Registered protocol family 17
+May 19 10:55:36 archlinux kernel: RAS: Correctable Errors collector initialized.
+May 19 10:55:36 archlinux kernel: IPI shorthand broadcast: enabled
+May 19 10:55:36 archlinux kernel: sched_clock: Marking stable (912128416, 2290793)->(913538771, 880438)
+May 19 10:55:36 archlinux kernel: registered taskstats version 1
+May 19 10:55:36 archlinux kernel: Loading compiled-in X.509 certificates
+May 19 10:55:36 archlinux kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 05aa9d28746f38108423e7dc6aaf5e118ba64ad1'
+May 19 10:55:36 archlinux kernel: zswap: loaded using pool lzo/zbud
+May 19 10:55:36 archlinux kernel: Key type ._fscrypt registered
+May 19 10:55:36 archlinux kernel: Key type .fscrypt registered
+May 19 10:55:36 archlinux kernel: Key type fscrypt-provisioning registered
+May 19 10:55:36 archlinux kernel: Key type big_key registered
+May 19 10:55:36 archlinux kernel: PM:   Magic number: 4:372:932
+May 19 10:55:36 archlinux kernel: Freeing unused decrypted memory: 2040K
+May 19 10:55:36 archlinux kernel: Freeing unused kernel image (initmem) memory: 1640K
+May 19 10:55:36 archlinux kernel: Write protecting the kernel read-only data: 20480k
+May 19 10:55:36 archlinux kernel: Freeing unused kernel image (text/rodata gap) memory: 2044K
+May 19 10:55:36 archlinux kernel: Freeing unused kernel image (rodata/data gap) memory: 1356K
+May 19 10:55:36 archlinux kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+May 19 10:55:36 archlinux kernel: x86/mm: Checking user space page tables
+May 19 10:55:36 archlinux kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+May 19 10:55:36 archlinux kernel: Run /init as init process
+May 19 10:55:36 archlinux kernel:   with arguments:
+May 19 10:55:36 archlinux kernel:     /init
+May 19 10:55:36 archlinux kernel:   with environment:
+May 19 10:55:36 archlinux kernel:     HOME=/
+May 19 10:55:36 archlinux kernel:     TERM=linux
+May 19 10:55:36 archlinux kernel:     BOOT_IMAGE=/boot/vmlinuz-linux57
+May 19 10:55:36 archlinux kernel: fbcon: Taking over console
+May 19 10:55:36 archlinux kernel: Console: switching to colour frame buffer device 80x30
+May 19 10:55:36 archlinux kernel: ata_piix 0000:00:01.1: version 2.13
+May 19 10:55:36 archlinux kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+May 19 10:55:36 archlinux kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+May 19 10:55:36 archlinux kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+May 19 10:55:36 archlinux kernel: scsi host0: ata_piix
+May 19 10:55:36 archlinux kernel: scsi host1: ata_piix
+May 19 10:55:36 archlinux kernel: ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+May 19 10:55:36 archlinux kernel: ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+May 19 10:55:36 archlinux kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+May 19 10:55:36 archlinux kernel: ata1.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+May 19 10:55:36 archlinux kernel: ata1.00: 62914560 sectors, multi 128: LBA 
+May 19 10:55:36 archlinux kernel: scsi 0:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+May 19 10:55:36 archlinux kernel: sd 0:0:0:0: [sda] 62914560 512-byte logical blocks: (32.2 GB/30.0 GiB)
+May 19 10:55:36 archlinux kernel: sd 0:0:0:0: [sda] Write Protect is off
+May 19 10:55:36 archlinux kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+May 19 10:55:36 archlinux kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+May 19 10:55:36 archlinux kernel:  sda: sda1 sda2
+May 19 10:55:36 archlinux kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+May 19 10:55:36 archlinux kernel: EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+May 19 10:55:36 archlinux kernel: random: fast init done
+May 19 10:55:36 archlinux systemd[1]: systemd 245.5-2-arch running in system mode. (+PAM +AUDIT -SELINUX -IMA -APPARMOR +SMACK -SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+May 19 10:55:36 archlinux systemd[1]: Detected virtualization oracle.
+May 19 10:55:36 archlinux systemd[1]: Detected architecture x86-64.
+May 19 10:55:36 archlinux systemd[1]: Set hostname to <archlinux>.
+May 19 10:55:36 archlinux systemd[1]: Created slice system-getty.slice.
+May 19 10:55:36 archlinux systemd[1]: Created slice system-modprobe.slice.
+May 19 10:55:36 archlinux systemd[1]: Created slice User and Session Slice.
+May 19 10:55:36 archlinux systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+May 19 10:55:36 archlinux systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+May 19 10:55:36 archlinux systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+May 19 10:55:36 archlinux systemd[1]: Reached target Local Encrypted Volumes.
+May 19 10:55:36 archlinux systemd[1]: Reached target Paths.
+May 19 10:55:36 archlinux systemd[1]: Reached target Remote Encrypted Volumes.
+May 19 10:55:36 archlinux systemd[1]: Reached target Remote File Systems.
+May 19 10:55:36 archlinux systemd[1]: Reached target Slices.
+May 19 10:55:36 archlinux systemd[1]: Listening on Device-mapper event daemon FIFOs.
+May 19 10:55:36 archlinux systemd[1]: Listening on Process Core Dump Socket.
+May 19 10:55:36 archlinux systemd[1]: Listening on initctl Compatibility Named Pipe.
+May 19 10:55:36 archlinux systemd[1]: Listening on Journal Audit Socket.
+May 19 10:55:36 archlinux systemd[1]: Listening on Journal Socket (/dev/log).
+May 19 10:55:36 archlinux systemd[1]: Listening on Journal Socket.
+May 19 10:55:36 archlinux systemd[1]: Listening on Network Service Netlink Socket.
+May 19 10:55:36 archlinux systemd[1]: Listening on udev Control Socket.
+May 19 10:55:36 archlinux systemd[1]: Listening on udev Kernel Socket.
+May 19 10:55:36 archlinux systemd[1]: Listening on User Database Manager Socket.
+May 19 10:55:36 archlinux systemd[1]: Mounting Huge Pages File System...
+May 19 10:55:36 archlinux systemd[1]: Mounting POSIX Message Queue File System...
+May 19 10:55:36 archlinux systemd[1]: Mounting Kernel Debug File System...
+May 19 10:55:36 archlinux systemd[1]: Mounting Kernel Trace File System...
+May 19 10:55:36 archlinux systemd[1]: Starting Create list of static device nodes for the current kernel...
+May 19 10:55:36 archlinux systemd[1]: Starting Load Kernel Module drm...
+May 19 10:55:36 archlinux systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+May 19 10:55:36 archlinux systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+May 19 10:55:36 archlinux systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+May 19 10:55:36 archlinux systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+May 19 10:55:36 archlinux systemd[1]: Mounting Kernel Configuration File System...
+May 19 10:55:36 archlinux systemd[1]: Starting Remount Root and Kernel File Systems...
+May 19 10:55:36 archlinux systemd[1]: Starting Repartition Root Disk...
+May 19 10:55:36 archlinux systemd[1]: Starting Apply Kernel Variables...
+May 19 10:55:36 archlinux systemd[1]: Starting udev Coldplug all Devices...
+May 19 10:55:36 archlinux systemd[1]: Mounted Huge Pages File System.
+May 19 10:55:36 archlinux systemd[1]: Mounted POSIX Message Queue File System.
+May 19 10:55:36 archlinux systemd[1]: Mounted Kernel Debug File System.
+May 19 10:55:36 archlinux systemd[1]: Mounted Kernel Trace File System.
+May 19 10:55:36 archlinux systemd[1]: Finished Create list of static device nodes for the current kernel.
+May 19 10:55:36 archlinux systemd[1]: Mounted Kernel Configuration File System.
+May 19 10:55:36 archlinux systemd[1]: Finished Apply Kernel Variables.
+May 19 10:55:36 archlinux systemd[1]: Finished Repartition Root Disk.
+May 19 10:55:36 archlinux kernel: EXT4-fs (sda2): re-mounted. Opts: (null)
+May 19 10:55:36 archlinux systemd[1]: Finished Remount Root and Kernel File Systems.
+May 19 10:55:36 archlinux systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+May 19 10:55:36 archlinux systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+May 19 10:55:36 archlinux systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+May 19 10:55:36 archlinux systemd[1]: Starting Load/Save Random Seed...
+May 19 10:55:36 archlinux systemd[1]: Condition check resulted in Create System Users being skipped.
+May 19 10:55:36 archlinux systemd[1]: Starting Create Static Device Nodes in /dev...
+May 19 10:55:36 archlinux systemd[1]: Finished udev Coldplug all Devices.
+May 19 10:55:36 archlinux systemd[1]: Finished Create Static Device Nodes in /dev.
+May 19 10:55:36 archlinux systemd[1]: Reached target Local File Systems (Pre).
+May 19 10:55:36 archlinux systemd[1]: Condition check resulted in Virtual Machine and Container Storage (Compatibility) being skipped.
+May 19 10:55:36 archlinux systemd[1]: Reached target Containers.
+May 19 10:55:36 archlinux systemd[1]: Started Entropy Daemon based on the HAVEGE algorithm.
+May 19 10:55:36 archlinux systemd[1]: Starting Journal Service...
+May 19 10:55:36 archlinux systemd[1]: Starting udev Kernel Device Manager...
+May 19 10:55:36 archlinux kernel: Linux agpgart interface v0.103
+May 19 10:55:36 archlinux kernel: random: crng init done
+May 19 10:55:36 archlinux systemd[1]: Finished Load/Save Random Seed.
+May 19 10:55:36 archlinux systemd[1]: Started udev Kernel Device Manager.
+May 19 10:55:36 archlinux systemd[1]: Starting Network Service...
+May 19 10:55:36 archlinux systemd-journald[258]: Journal started
+May 19 10:55:36 archlinux systemd-journald[258]: Runtime Journal (/run/log/journal/c57090302196456aa067c794ba186528) is 8.0M, max 196.8M, 188.8M free.
+May 19 10:55:36 archlinux systemd[1]: Started Journal Service.
+May 19 10:55:36 archlinux kernel: audit: type=1130 audit(1589885736.530:2): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux systemd-sysctl[250]: Not setting net/ipv4/conf/all/rp_filter (explicit setting exists).
+May 19 10:55:36 archlinux systemd-sysctl[250]: Not setting net/ipv4/conf/default/rp_filter (explicit setting exists).
+May 19 10:55:36 archlinux systemd-sysctl[250]: Not setting net/ipv4/conf/all/accept_source_route (explicit setting exists).
+May 19 10:55:36 archlinux systemd-sysctl[250]: Not setting net/ipv4/conf/default/accept_source_route (explicit setting exists).
+May 19 10:55:36 archlinux systemd-sysctl[250]: Not setting net/ipv4/conf/all/promote_secondaries (explicit setting exists).
+May 19 10:55:36 archlinux systemd-sysctl[250]: Not setting net/ipv4/conf/default/promote_secondaries (explicit setting exists).
+May 19 10:55:36 archlinux systemd-random-seed[254]: Kernel entropy pool is not initialized yet, waiting until it is.
+May 19 10:55:36 archlinux systemd-journald[258]: Time spent on flushing to /var/log/journal/c57090302196456aa067c794ba186528 is 126.408ms for 467 entries.
+May 19 10:55:36 archlinux systemd-journald[258]: System Journal (/var/log/journal/c57090302196456aa067c794ba186528) is 32.0M, max 1.7G, 1.7G free.
+May 19 10:55:36 archlinux systemd-udevd[259]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+May 19 10:55:36 archlinux systemd[1]: Starting Flush Journal to Persistent Storage...
+May 19 10:55:36 archlinux kernel: audit: type=1130 audit(1589885736.746:3): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux systemd[1]: Finished Flush Journal to Persistent Storage.
+May 19 10:55:36 archlinux haveged[257]: haveged: listening socket at 3
+May 19 10:55:36 archlinux haveged[257]: haveged: ver: 1.9.8; arch: x86; vend: GenuineIntel; build: (gcc 9.1.0 ITV); collect: 128K
+May 19 10:55:36 archlinux haveged[257]: haveged: cpu: (L4 VC); data: 32K (L4 V); inst: 32K (L4 V); idx: 25/40; sz: 32671/52623
+May 19 10:55:36 archlinux haveged[257]: haveged: tot tests(BA8): A:1/1 B:1/1 continuous tests(B):  last entropy estimate 7.99633
+May 19 10:55:36 archlinux haveged[257]: haveged: fills: 0, generated: 0
+May 19 10:55:36 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@drm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@drm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux systemd[1]: modprobe@drm.service: Succeeded.
+May 19 10:55:36 archlinux systemd[1]: Finished Load Kernel Module drm.
+May 19 10:55:36 archlinux kernel: audit: type=1130 audit(1589885736.766:4): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@drm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux kernel: audit: type=1131 audit(1589885736.766:5): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=modprobe@drm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux kernel: input: PC Speaker as /devices/platform/pcspkr/input/input5
+May 19 10:55:36 archlinux kernel: ACPI: AC Adapter [AC] (on-line)
+May 19 10:55:36 archlinux systemd-networkd[260]: Enumeration completed
+May 19 10:55:36 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-networkd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux systemd[1]: Started Network Service.
+May 19 10:55:36 archlinux kernel: audit: type=1130 audit(1589885736.953:6): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-networkd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:36 archlinux kernel: piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+May 19 10:55:37 archlinux kernel: battery: ACPI: Battery Slot [BAT0] (battery present)
+May 19 10:55:37 archlinux kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+May 19 10:55:37 archlinux kernel: vboxguest: host-version: 6.1.4r136177 0x8000000f
+May 19 10:55:37 archlinux kernel: vbg_heartbeat_init: Setting up heartbeat to trigger every 2000 milliseconds
+May 19 10:55:37 archlinux kernel: input: VirtualBox mouse integration as /devices/pci0000:00/0000:00:04.0/input/input6
+May 19 10:55:37 archlinux kernel: vboxguest: misc device minor 59, IRQ 20, I/O port d020, MMIO at 0x00000000f0400000 (size 0x0000000000400000)
+May 19 10:55:37 archlinux systemd-udevd[278]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+May 19 10:55:37 archlinux systemd[1]: Found device VBOX_HARDDISK 1.
+May 19 10:55:37 archlinux systemd[1]: Activating swap /dev/sda1...
+May 19 10:55:37 archlinux systemd[1]: Activated swap /dev/sda1.
+May 19 10:55:37 archlinux systemd[1]: Reached target Swap.
+May 19 10:55:37 archlinux kernel: Adding 2012156k swap on /dev/sda1.  Priority:-2 extents:1 across:2012156k FS
+May 19 10:55:37 archlinux systemd[1]: Mounting Temporary Directory (/tmp)...
+May 19 10:55:37 archlinux systemd[1]: Mounted Temporary Directory (/tmp).
+May 19 10:55:37 archlinux systemd[1]: Reached target Local File Systems.
+May 19 10:55:37 archlinux systemd[1]: Condition check resulted in Rebuild Dynamic Linker Cache being skipped.
+May 19 10:55:37 archlinux systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+May 19 10:55:37 archlinux systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+May 19 10:55:37 archlinux systemd[1]: Starting Create Volatile Files and Directories...
+May 19 10:55:37 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux systemd[1]: Finished Create Volatile Files and Directories.
+May 19 10:55:37 archlinux systemd[1]: Condition check resulted in Rebuild Journal Catalog being skipped.
+May 19 10:55:37 archlinux kernel: audit: type=1130 audit(1589885737.133:7): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux systemd[1]: Starting Network Name Resolution...
+May 19 10:55:37 archlinux systemd[1]: Starting Network Time Synchronization...
+May 19 10:55:37 archlinux systemd[1]: Condition check resulted in Update is Completed being skipped.
+May 19 10:55:37 archlinux systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+May 19 10:55:37 archlinux audit[289]: SYSTEM_BOOT pid=289 uid=0 auid=4294967295 ses=4294967295 msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux kernel: audit: type=1127 audit(1589885737.153:8): pid=289 uid=0 auid=4294967295 ses=4294967295 msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux kernel: audit: type=1130 audit(1589885737.160:9): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-utmp comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-utmp comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux systemd[1]: Finished Update UTMP about System Boot/Shutdown.
+May 19 10:55:37 archlinux kernel: mousedev: PS/2 mouse device common for all mice
+May 19 10:55:37 archlinux kernel: e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+May 19 10:55:37 archlinux kernel: e1000: Copyright (c) 1999-2006 Intel Corporation.
+May 19 10:55:37 archlinux kernel: cryptd: max_cpu_qlen set to 1000
+May 19 10:55:37 archlinux systemd-resolved[287]: Positive Trust Anchors:
+May 19 10:55:37 archlinux systemd-resolved[287]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+May 19 10:55:37 archlinux systemd-resolved[287]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+May 19 10:55:37 archlinux kernel: AVX2 version of gcm_enc/dec engaged.
+May 19 10:55:37 archlinux kernel: AES CTR mode by8 optimization enabled
+May 19 10:55:37 archlinux systemd[1]: Started Network Time Synchronization.
+May 19 10:55:37 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-timesyncd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux systemd[1]: Reached target System Initialization.
+May 19 10:55:37 archlinux systemd[1]: Started Daily Cleanup of Temporary Directories.
+May 19 10:55:37 archlinux systemd[1]: Reached target System Time Set.
+May 19 10:55:37 archlinux systemd[1]: Reached target System Time Synchronized.
+May 19 10:55:37 archlinux systemd[1]: Started Daily man-db regeneration.
+May 19 10:55:37 archlinux systemd[1]: Started Daily verification of password and group files.
+May 19 10:55:37 archlinux systemd[1]: Reached target Timers.
+May 19 10:55:37 archlinux kernel: audit: type=1130 audit(1589885737.746:10): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-timesyncd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux systemd[1]: Listening on D-Bus System Message Bus Socket.
+May 19 10:55:37 archlinux systemd[1]: Reached target Sockets.
+May 19 10:55:37 archlinux systemd[1]: Reached target Basic System.
+May 19 10:55:37 archlinux systemd[1]: Started D-Bus System Message Bus.
+May 19 10:55:37 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=dbus comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux systemd[1]: Condition check resulted in Initializes Pacman keyring being skipped.
+May 19 10:55:37 archlinux systemd[1]: Condition check resulted in SSH Key Generation being skipped.
+May 19 10:55:37 archlinux audit: AUDIT1334 prog-id=7 op=LOAD
+May 19 10:55:37 archlinux audit: AUDIT1334 prog-id=8 op=LOAD
+May 19 10:55:37 archlinux systemd[1]: Starting Home Area Manager...
+May 19 10:55:37 archlinux audit: AUDIT1334 prog-id=9 op=LOAD
+May 19 10:55:37 archlinux audit: AUDIT1334 prog-id=10 op=LOAD
+May 19 10:55:37 archlinux systemd[1]: Starting Login Service...
+May 19 10:55:37 archlinux systemd[1]: Starting VirtualBox Guest Service...
+May 19 10:55:37 archlinux systemd-resolved[287]: Using system hostname 'archlinux'.
+May 19 10:55:37 archlinux systemd[1]: Started Network Name Resolution.
+May 19 10:55:37 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-resolved comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux systemd[1]: Reached target Network.
+May 19 10:55:37 archlinux systemd[1]: Reached target Host and Network Name Lookups.
+May 19 10:55:37 archlinux systemd[1]: Condition check resulted in Initializes mirrors for the VM being skipped.
+May 19 10:55:37 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=sshd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux systemd[1]: Started OpenSSH Daemon.
+May 19 10:55:37 archlinux systemd[1]: Starting Permit User Sessions...
+May 19 10:55:37 archlinux systemd[1]: Finished Permit User Sessions.
+May 19 10:55:37 archlinux systemd[1]: Started Getty on tty1.
+May 19 10:55:37 archlinux systemd[1]: Reached target Login Prompts.
+May 19 10:55:37 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-user-sessions comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input7
+May 19 10:55:37 archlinux systemd[1]: Started VirtualBox Guest Service.
+May 19 10:55:37 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=vboxservice comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:37 archlinux sshd[310]: Server listening on 0.0.0.0 port 22.
+May 19 10:55:37 archlinux sshd[310]: Server listening on :: port 22.
+May 19 10:55:37 archlinux VBoxService[315]: 10:55:37.917988 main     VBoxService 6.1.6 r137129 (verbosity: 0) linux.amd64 (Apr 15 2020 10:13:28) release log
+May 19 10:55:37 archlinux VBoxService[315]: 10:55:37.917990 main     Log opened 2020-05-19T10:55:37.917708000Z
+May 19 10:55:37 archlinux VBoxService[315]: 10:55:37.918128 main     OS Product: Linux
+May 19 10:55:37 archlinux VBoxService[315]: 10:55:37.918135 main     OS Release: 5.7.0-rc6linux-5.7-dirty
+May 19 10:55:37 archlinux VBoxService[315]: 10:55:37.918138 main     OS Version: #3 SMP PREEMPT Tue May 19 08:07:35 UTC 2020
+May 19 10:55:37 archlinux VBoxService[315]: 10:55:37.918141 main     Executable: /usr/bin/VBoxService
+May 19 10:55:37 archlinux VBoxService[315]: 10:55:37.918141 main     Process ID: 315
+May 19 10:55:37 archlinux VBoxService[315]: 10:55:37.918142 main     Package type: LINUX_64BITS_GENERIC (OSE)
+May 19 10:55:37 archlinux VBoxService[315]: 10:55:37.919238 main     6.1.6 r137129 started. Verbose level = 0
+May 19 10:55:38 archlinux systemd[1]: Started Home Area Manager.
+May 19 10:55:38 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-homed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:38 archlinux kernel: kauditd_printk_skb: 10 callbacks suppressed
+May 19 10:55:38 archlinux kernel: audit: type=1130 audit(1589885738.560:21): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-homed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:38 archlinux systemd-logind[305]: Watching system buttons on /dev/input/event0 (Power Button)
+May 19 10:55:38 archlinux systemd-logind[305]: Watching system buttons on /dev/input/event1 (Sleep Button)
+May 19 10:55:38 archlinux systemd-logind[305]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard)
+May 19 10:55:38 archlinux systemd-logind[305]: New seat seat0.
+May 19 10:55:38 archlinux systemd[1]: Started Login Service.
+May 19 10:55:38 archlinux systemd[1]: Reached target Multi-User System.
+May 19 10:55:38 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-logind comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:38 archlinux systemd[1]: Reached target Graphical Interface.
+May 19 10:55:38 archlinux systemd[1]: Startup finished in 2.713s (kernel) + 3.307s (userspace) = 6.020s.
+May 19 10:55:38 archlinux kernel: audit: type=1130 audit(1589885738.613:22): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-logind comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:38 archlinux kernel: checking generic (e0000000 130000) vs hw (e0000000 800000)
+May 19 10:55:38 archlinux kernel: fb0: switching to vboxvideodrmfb from VESA VGA
+May 19 10:55:38 archlinux kernel: Console: switching to colour dummy device 80x25
+May 19 10:55:38 archlinux kernel: vboxvideo 0000:00:02.0: vgaarb: deactivate vga console
+May 19 10:55:38 archlinux kernel: [drm] VRAM 00800000
+May 19 10:55:38 archlinux kernel: [TTM] Zone  kernel: Available graphics memory: 2015982 KiB
+May 19 10:55:38 archlinux kernel: [TTM] Initializing pool allocator
+May 19 10:55:38 archlinux kernel: [TTM] Initializing DMA pool allocator
+May 19 10:55:38 archlinux kernel: fbcon: vboxvideodrmfb (fb0) is primary device
+May 19 10:55:38 archlinux kernel: Console: switching to colour frame buffer device 128x48
+May 19 10:55:38 archlinux kernel: vboxvideo 0000:00:02.0: fb0: vboxvideodrmfb frame buffer device
+May 19 10:55:38 archlinux kernel: [drm] Initialized vboxvideo 1.0.0 20130823 for 0000:00:02.0 on minor 0
+May 19 10:55:38 archlinux kernel: e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:7e:f4:81
+May 19 10:55:38 archlinux kernel: e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+May 19 10:55:38 archlinux systemd-udevd[268]: Using default interface naming scheme 'v245'.
+May 19 10:55:38 archlinux systemd-udevd[268]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+May 19 10:55:38 archlinux systemd-networkd[260]: eth0: IPv6 successfully enabled
+May 19 10:55:38 archlinux systemd-networkd[260]: eth0: Link UP
+May 19 10:55:41 archlinux systemd-networkd[260]: eth0: Gained carrier
+May 19 10:55:41 archlinux systemd-networkd[260]: eth0: DHCPv4 address 10.0.2.15/24 via 10.0.2.2
+May 19 10:55:41 archlinux kernel: e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+May 19 10:55:41 archlinux kernel: IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+May 19 10:55:41 archlinux systemd-timesyncd[288]: Network configuration changed, trying to establish connection.
+May 19 10:55:42 archlinux systemd-networkd[260]: eth0: Gained IPv6LL
+May 19 10:55:44 archlinux audit[361]: USER_ACCT pid=361 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_tally2,pam_access,pam_unix,pam_permit,pam_time acct="vagrant" exe="/usr/bin/sshd" hostname=10.0.2.2 addr=10.0.2.2 terminal=ssh res=success'
+May 19 10:55:44 archlinux sshd[361]: Accepted publickey for vagrant from 10.0.2.2 port 59335 ssh2: RSA SHA256:AMBO3M5Hsx1dYNFAgkxw1SFUH8aXh4U+jFhqoqPAJiI
+May 19 10:55:44 archlinux kernel: audit: type=1101 audit(1589885744.429:23): pid=361 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_tally2,pam_access,pam_unix,pam_permit,pam_time acct="vagrant" exe="/usr/bin/sshd" hostname=10.0.2.2 addr=10.0.2.2 terminal=ssh res=success'
+May 19 10:55:44 archlinux audit[361]: CRED_ACQ pid=361 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_tally2,pam_shells,pam_unix,pam_permit,pam_env acct="vagrant" exe="/usr/bin/sshd" hostname=10.0.2.2 addr=10.0.2.2 terminal=ssh res=success'
+May 19 10:55:44 archlinux audit[361]: SYSCALL arch=c000003e syscall=1 success=yes exit=4 a0=3 a1=7ffc7902e860 a2=4 a3=7ffc7902e574 items=0 ppid=310 pid=361 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sshd" exe="/usr/bin/sshd" key=(null)
+May 19 10:55:44 archlinux audit: PROCTITLE proctitle=737368643A2076616772616E74205B707269765D
+May 19 10:55:44 archlinux sshd[361]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+May 19 10:55:44 archlinux kernel: audit: type=1103 audit(1589885744.433:24): pid=361 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_tally2,pam_shells,pam_unix,pam_permit,pam_env acct="vagrant" exe="/usr/bin/sshd" hostname=10.0.2.2 addr=10.0.2.2 terminal=ssh res=success'
+May 19 10:55:44 archlinux kernel: audit: type=1006 audit(1589885744.436:25): pid=361 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=1 res=1
+May 19 10:55:44 archlinux kernel: audit: type=1300 audit(1589885744.436:25): arch=c000003e syscall=1 success=yes exit=4 a0=3 a1=7ffc7902e860 a2=4 a3=7ffc7902e574 items=0 ppid=310 pid=361 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sshd" exe="/usr/bin/sshd" key=(null)
+May 19 10:55:44 archlinux kernel: audit: type=1327 audit(1589885744.436:25): proctitle=737368643A2076616772616E74205B707269765D
+May 19 10:55:44 archlinux audit: AUDIT1334 prog-id=11 op=LOAD
+May 19 10:55:44 archlinux kernel: audit: type=1334 audit(1589885744.439:26): prog-id=11 op=LOAD
+May 19 10:55:44 archlinux audit: AUDIT1334 prog-id=12 op=LOAD
+May 19 10:55:44 archlinux systemd[1]: Starting User Database Manager...
+May 19 10:55:44 archlinux kernel: audit: type=1334 audit(1589885744.439:27): prog-id=12 op=LOAD
+May 19 10:55:44 archlinux systemd[1]: Started User Database Manager.
+May 19 10:55:44 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-userdbd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:44 archlinux kernel: audit: type=1130 audit(1589885744.693:28): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-userdbd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:44 archlinux systemd[1]: Created slice User Slice of UID 1000.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Rebuild Dynamic Linker Cache being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Rebuild Journal Catalog being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Create System Users being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Update is Completed being skipped.
+May 19 10:55:44 archlinux systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+May 19 10:55:44 archlinux systemd-logind[305]: New session 1 of user vagrant.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Rebuild Dynamic Linker Cache being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Rebuild Journal Catalog being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Create System Users being skipped.
+May 19 10:55:44 archlinux systemd[1]: Condition check resulted in Update is Completed being skipped.
+May 19 10:55:44 archlinux systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 10:55:44 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:44 archlinux systemd[1]: Starting User Manager for UID 1000...
+May 19 10:55:44 archlinux kernel: audit: type=1130 audit(1589885744.730:29): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:44 archlinux audit[368]: USER_ACCT pid=368 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_tally2,pam_access,pam_unix,pam_permit,pam_time acct="vagrant" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:44 archlinux audit[368]: CRED_ACQ pid=368 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=? acct="vagrant" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+May 19 10:55:44 archlinux systemd[368]: pam_warn(systemd-user:setcred): function=[pam_sm_setcred] flags=0x8002 service=[systemd-user] terminal=[] user=[vagrant] ruser=[<unknown>] rhost=[<unknown>]
+May 19 10:55:44 archlinux kernel: audit: type=1101 audit(1589885744.736:30): pid=368 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_tally2,pam_access,pam_unix,pam_permit,pam_time acct="vagrant" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:44 archlinux audit[368]: SYSCALL arch=c000003e syscall=1 success=yes exit=4 a0=8 a1=7ffef9439210 a2=4 a3=7ffef9438f24 items=0 ppid=1 pid=368 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=2 comm="(systemd)" exe="/usr/lib/systemd/systemd" key=(null)
+May 19 10:55:44 archlinux audit: PROCTITLE proctitle="(systemd)"
+May 19 10:55:44 archlinux systemd[368]: pam_unix(systemd-user:session): session opened for user vagrant by (uid=0)
+May 19 10:55:44 archlinux audit[368]: USER_START pid=368 uid=0 auid=1000 ses=2 msg='op=PAM:session_open grantors=pam_loginuid,pam_loginuid,pam_keyinit,pam_limits,pam_unix,pam_permit,pam_mail,pam_systemd,pam_env acct="vagrant" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:44 archlinux audit: AUDIT1334 prog-id=13 op=LOAD
+May 19 10:55:44 archlinux audit[368]: SYSCALL arch=c000003e syscall=321 success=yes exit=8 a0=5 a1=7fff4ef5bd00 a2=70 a3=561a6b8de710 items=0 ppid=1 pid=368 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=2 comm="systemd" exe="/usr/lib/systemd/systemd" key=(null)
+May 19 10:55:44 archlinux audit: PROCTITLE proctitle="(systemd)"
+May 19 10:55:44 archlinux audit: AUDIT1334 prog-id=13 op=UNLOAD
+May 19 10:55:44 archlinux systemd[368]: Reached target Paths.
+May 19 10:55:44 archlinux audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 19 10:55:44 archlinux audit[361]: USER_START pid=361 uid=0 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_loginuid,pam_keyinit,pam_limits,pam_unix,pam_permit,pam_mail,pam_systemd,pam_env acct="vagrant" exe="/usr/bin/sshd" hostname=10.0.2.2 addr=10.0.2.2 terminal=ssh res=success'
+May 19 10:55:44 archlinux audit[374]: CRED_ACQ pid=374 uid=0 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_tally2,pam_shells,pam_unix,pam_permit,pam_env acct="vagrant" exe="/usr/bin/sshd" hostname=10.0.2.2 addr=10.0.2.2 terminal=ssh res=success'
+May 19 10:55:44 archlinux systemd[368]: Reached target Timers.
+May 19 10:55:44 archlinux systemd[368]: Starting D-Bus User Message Bus Socket.
+May 19 10:55:44 archlinux systemd[368]: Listening on GnuPG network certificate management daemon.
+May 19 10:55:44 archlinux systemd[368]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 10:55:44 archlinux systemd[368]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 10:55:44 archlinux systemd[368]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 10:55:44 archlinux systemd[368]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 10:55:44 archlinux systemd[368]: Listening on p11-kit server.
+May 19 10:55:44 archlinux systemd[368]: Listening on D-Bus User Message Bus Socket.
+May 19 10:55:44 archlinux systemd[368]: Reached target Sockets.
+May 19 10:55:44 archlinux systemd[368]: Reached target Basic System.
+May 19 10:55:44 archlinux systemd[368]: Reached target Main User Target.
+May 19 10:55:44 archlinux systemd[368]: Startup finished in 58ms.
+May 19 10:55:44 archlinux systemd[1]: Started User Manager for UID 1000.
+May 19 10:55:44 archlinux systemd[1]: Started Session 1 of user vagrant.
+May 19 10:55:47 archlinux sudo[521]:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/usr/bin/bash -l
